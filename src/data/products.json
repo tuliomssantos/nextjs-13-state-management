@@ -1,0 +1,6 @@
+{
+    "name": "Pen",
+    "price": 1.99,
+    "description": "A pen",
+    "image": "http://localhost:8080/isolated-shot-ink-pen-with-white-background.jpeg"
+}
