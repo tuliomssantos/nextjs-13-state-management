@@ -1,4 +1,8 @@
-import './globals.css'
+import { Inter } from 'next/font/google'
+
+import '../styles/reset.css'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -7,12 +11,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
